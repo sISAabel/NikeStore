@@ -1,7 +1,9 @@
 body {
-    font-family: sans-serif;
-    align-items: center;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap");
+  font-family: "Roboto", sans-serif;
+  align-items: center;
 }
+
 main {
   display: flex;
   background: linear-gradient(45deg, #294954, #425549, #4e5a44);
@@ -12,75 +14,167 @@ main {
   width: 500px;
   height: 350px;
 }
+
 .product {
   background: linear-gradient(45deg, #008bb9, #6abd8c, #96ce6c);
-  height: 180px;
-  width: 150px;
+  height: 350px;
+  width: 200px;
   display: flex;
   flex-direction: row-reverse;
+  -webkit-box-shadow: -16px 21px 29px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: -16px 21px 29px -1px rgba(0, 0, 0, 0.39);
+  box-shadow: -16px 21px 29px -1px rgba(0, 0, 0, 0.39);
 }
-.fas {
-  font-size: 100px;
+
+.share {
+  margin: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  background: #fff;
+  width: 15%;
+  border-radius: 50%;
+  -webkit-box-shadow: -4px 7px 11px 11px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -4px 7px 11px 11px rgba(0, 0, 0, 0.14);
+  box-shadow: -4px 7px 11px 11px rgba(0, 0, 0, 0.14);
 }
-.product img {
+
+.share i {
+  padding: 5px;
+  width: 51px;
+  height: 25px;
+  text-align: center;
+  color: #8dcd9f;
+  font-size: 22px;
+}
+
+.shoe {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
   position: absolute;
-  transform: rotate(35deg);
-  width: 60px;
-  height: auto;
+  transform: rotate(30deg);
+  width: 25%;
+  height: 55%;
+  top: 22%;
+  left: 9%;
+  filter: drop-shadow(5px 10px 2px rgba(0, 0, 0, 0.301));
 }
+
+#star {
+  margin-top: 10px;
+  color: gold;
+  font-size: 20px;
+}
+
 .info-product {
   background-color: white;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
+  -webkit-box-shadow: 9px 9px 29px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 9px 9px 29px -1px rgba(0, 0, 0, 0.39);
+  box-shadow: 9px 9px 29px -1px rgba(0, 0, 0, 0.39);
+  width: 50%;
 }
+
 .general-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0px;
+  flex-direction: row;
 }
+
 .general-info img {
-    width: 160px;
-    height: 50px;
+  width: 160px;
+  height: 50px;
 }
+
 .price {
-    font-size: 30px;
-    font-weight: initial;
-    color: #585858;
+  font-size: 30px;
+  font-weight: initial;
+  color: #585858;
 }
+
 h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: bolder;
-    font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  font-size: 40px;
 }
+
 h2 {
-    margin-top: 0px;
-    font-weight: initial;
-    font-size: 20px;
+  margin-top: 0px;
+  font-weight: initial;
+  font-size: 20px;
 }
+
 h4 {
-    font-weight: initial;
-    font-size: 15px;
-    color: #7a7a7a;
-    margin-bottom: 10px;
+  font-weight: initial;
+  font-size: 15px;
+  color: #7a7a7a;
+  margin-bottom: 10px;
 }
+
+.pick-colors {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.cyan {
+  background-color: #65cfe9;
+}
+
+.blue {
+  background-color: #0097ce;
+}
+
+.green {
+  background-color: #82da90;
+}
+
+.yellow {
+  background-color: #f4ce50;
+}
+
+.purple {
+  background-color: #6f72d3;
+}
+
 .counter {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
+
 .buttons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
 #add {
-    margin-bottom: 10px;
-    border-radius: 50%;
-    letter-spacing: 3px;
-    font-size: 10px;
-    height: 30px;
-    background:radial-gradient(#0096ce, #00b3da);
-    color: lightblue;
+  display: flex;
+  justify-content: center;
+  border-radius: 45px 50px 50px 50px / 50px 45px 45px 45px;
+  letter-spacing: 3px;
+  font-size: 10px;
+  background: radial-gradient(#0096cc, #00b3da);
+  color: lightblue;
+  width: 90%;
 }
+
+#add p {
+  text-align: center;
+}
+
 a {
-    text-align: center;
-    font-size: 10px;
+  color: #3dabd6;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 10px;
 }

@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="StyleSheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/2e9cad6e92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
     <title>Nike Store</title>
 </head>
 <body>
    <main>
       <div class="product">
-         <i class="fas fa-share-alt"></i>
-         <img src="shoe.png" alt="shoe.png">
+         <div class="share">
+            <i class="fas fa-share-alt"></i>
+         </div>
+         <img class="shoe" src="shoe.png" alt="shoe.png">
       </div>      
       <div class="info-product">
          <div class="general-info">
-            <img src="https://webmarketingtips.mx/wp-content/uploads/2017/08/248-des-1170x395.png" alt="rating.png">
+            <div class="stars">
+               <i id="star" class="fas fa-star"></i>
+               <i id="star" class="fas fa-star"></i>
+               <i id="star" class="fas fa-star"></i>
+               <i id="star" class="fas fa-star"></i>
+               <i id="star" class="fas fa-star-half"></i>
+            </div>
             <div class="price">
                <span><sup>$</sup>220</span>
             </div>
          </div>
          <div class="description">
             <h1>Nike Airmax</h1>
-            <h2>Womwens's Running shoe</h2>
+            <h2>Womwen's Running shoe</h2>
          </div>
          <div class="opcions">
             <h4>Color</h4>
@@ -42,10 +52,12 @@
             </div>
          </div>
          <div class="buttons">
-            <button id="add">ADD TO CART ➡</button>
+            <div id="add">
+               <p>ADD TO CART ➡</p>
+            </div>
             <a href="wishlist.html">Add to wishlist</a>
          </div>
       </div>
    </main>
 </body>
-</html>
+<html>
